@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    font-family: 'Itim', cursive;
+}
+
+#footer {
+    background: url('./../images/footer.png') no-repeat;
+    height: 10%;
+    width: 100%;
+    background-size: cover;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }

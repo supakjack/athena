@@ -1,0 +1,25 @@
+<div>
+    <div data-aos="zoom-in" data-aos-delay="250"
+        class="position-absolute top-50 start-50 translate-middle d-flex flex-column justify-content-around align-items-center d-flex flex-wrap">
+        <img id="shw" src="./assets/images/collect/1.jpg" class="rounded pointer pygif" alt="Athena"
+            style="max-width: 360px;">
+        <div class="d-grid gap-2  mx-auto q1">
+            <button onclick="app.setLocation('#/start-set-1')" class="btn btn-primary q1" type="button"><span
+                    class="fs-4">เล่นซ้ำบทที่ 1 กดที่นี้</span></button>
+            <button onclick="app.setLocation('#/start-set-3')" class="btn btn-danger q1" type="button"><span
+                    class="fs-4">เล่นซ้ำบทเดิม กดที่นี้</span></button>
+        </div>
+    </div>
+</div>
+
+<style>
+
+</style>
+
+<script>
+    $('.q1').hide();
+    setTimeout(() => {
+        $('.pygif').attr('src', './assets/images/collect/2.jpg');
+        $('.q1').show();
+    }, 3500);
+</script>

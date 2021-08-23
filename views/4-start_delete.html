@@ -1,0 +1,37 @@
+<div>
+    <div data-aos="zoom-in" data-aos-delay="250"
+        class="position-absolute top-50 start-50 translate-middle  d-flex flex-column justify-content-around align-items-center d-flex flex-wrap">
+        <img src="./assets/images/delete/1.jpg" class="rounded pygif" alt="Athena"
+            style="max-width: 720px; max-height: 720px;">
+        <div class="d-grid gap-2 col-12 mx-auto q1 mb-2 mt-2">
+            <button onclick="app.setLocation('#/start-delete')" class="btn btn-danger q1" type="button"><span
+                    class="fs-4">ลบ</span></button>
+            <button onclick="app.setLocation('#/start-no-delete')" class="btn btn-primary q1" type="button"><span
+                    class="fs-4">ไม่ลบ</span></button>
+        </div>
+    </div>
+</div>
+
+<style>
+
+</style>
+
+<script>
+    $('.q1').hide();
+    $(function () {
+
+        setTimeout(() => {
+            $('.pygif').attr('src', './assets/images/delete/2.jpg');
+            setTimeout(() => {
+                $('.pygif').attr('src', './assets/images/delete/3.jpg');
+                setTimeout(() => {
+                    $('.pygif').attr('src', './assets/images/delete/4.jpg');
+                    setTimeout(() => {
+                        app.setLocation('#/start-set-2')
+                    }, 2500);
+                }, 2500);
+            }, 2500);
+        }, 2500);
+
+    });
+</script>

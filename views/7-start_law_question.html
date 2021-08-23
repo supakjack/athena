@@ -1,0 +1,54 @@
+<div>
+    <div data-aos="zoom-in" data-aos-delay="250"
+        class="position-absolute top-50 start-50 translate-middle  d-flex flex-column justify-content-around align-items-center d-flex flex-wrap">
+        <img src="./assets/images/law-question.png" class="rounded pygif" alt="Athena"
+            style="max-width: 720px; max-height: 720px;">
+        <div class="row text-center">
+            <div class="col-md-6 col-sm-12">
+                <img src="./assets/images/law-question-1.png" class="rounded pygif pointer c1" alt="Athena"
+                    style="max-width: 720px; max-height: 720px;">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="./assets/images/law-question-2.png" class="rounded pygif pointer c2" alt="Athena"
+                    style="max-width: 720px; max-height: 720px;">
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 col-sm-12">
+                <img src="./assets/images/law-question-3.png" class="rounded pygif" alt="Athena"
+                    style="max-width: 720px; max-height: 500px; max-height: 200px;">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="./assets/images/law-question-4.png" class="rounded pygif pointer c3" alt="Athena"
+                    style="max-width: 720px; max-height: 720px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+</style>
+
+<script>
+    // $(function () {
+    //     setTimeout(() => {
+    //         app.setLocation('#/start-set-2')
+    //     }, 2500);
+    // });
+    $('.c1').click(function (e) { 
+        e.preventDefault();
+        $state.answerSrc = '8_1'
+        app.setLocation('#/answer')
+    });
+    $('.c2').click(function (e) { 
+        e.preventDefault();
+        $state.answerSrc = '8_2'
+        app.setLocation('#/answer')
+    });
+    $('.c3').click(function (e) { 
+        e.preventDefault();
+        $state.answerSrc = '8_3'
+        app.setLocation('#/answer')
+    });
+</script>

@@ -1,0 +1,86 @@
+<div>
+    <div data-aos="zoom-in" data-aos-delay="250"
+        class="position-absolute top-50 start-50 translate-middle  d-flex flex-column justify-content-around align-items-center d-flex flex-wrap">
+        <img src="./assets/images/ep1/1.jpg" class="rounded pygif" alt="Athena"
+            style="max-width: 720px; max-height: 720px;">
+        <div class="d-grid gap-2 col-12 mx-auto q1 mb-2 mt-2">
+            <button class="btn btn-danger q1 q1-delete" type="button"><span class="fs-4">ลบ</span></button>
+            <button class="btn btn-primary q1 q1-no-delete" type="button"><span class="fs-4">ไม่ลบ</span></button>
+        </div>
+    </div>
+</div>
+
+<style>
+
+</style>
+
+<script>
+
+    $('.q1-delete').click(function (e) {
+        app.setLocation('#/start-delete')
+        $state.deleteAction = true
+        console.log($state.deleteAction);
+    });
+
+    $('.q1-no-delete').click(function (e) {
+        app.setLocation('#/start-no-delete')
+        $state.deleteAction = false
+        console.log($state.deleteAction);
+    });
+
+    $('.q1').hide();
+    $(function () {
+        setTimeout(() => {
+            $('.pygif').attr('src', './assets/images/ep1/2.jpg');
+            setTimeout(() => {
+                $('.pygif').attr('src', './assets/images/ep1/3.jpg');
+                setTimeout(() => {
+                    $('.pygif').attr('src', './assets/images/ep1/4.jpg');
+                    setTimeout(() => {
+                        $('.pygif').attr('src', './assets/images/ep1/5.jpg');
+                        setTimeout(() => {
+                            $('.pygif').attr('src', './assets/images/ep1/6.jpg');
+                            setTimeout(() => {
+                                $('.pygif').attr('src', './assets/images/ep1/7.jpg');
+                                setTimeout(() => {
+                                    $('.pygif').attr('src', './assets/images/ep1/8.jpg');
+                                    setTimeout(() => {
+                                        $('.pygif').attr('src', './assets/images/ep1/9.jpg');
+                                        setTimeout(() => {
+                                            $('.pygif').attr('src', './assets/images/ep1/10.jpg');
+                                            setTimeout(() => {
+                                                $('.pygif').attr('src', './assets/images/ep1/11.jpg');
+                                                setTimeout(() => {
+                                                    $('.pygif').attr('src', './assets/images/ep1/12.jpg');
+                                                    setTimeout(() => {
+                                                        $('.pygif').attr('src', './assets/images/ep1/13.jpg');
+                                                        setTimeout(() => {
+                                                            $('.pygif').attr('src', './assets/images/ep1/14.jpg');
+                                                            setTimeout(() => {
+                                                                $('.pygif').attr('src', './assets/images/ep1/15.jpg');
+                                                                setTimeout(() => {
+                                                                    $('.pygif').attr('src', './assets/images/ep1/16.jpg');
+                                                                    setTimeout(() => {
+                                                                        $('.pygif').attr('src', './assets/images/ep1/17.jpg');
+                                                                        setTimeout(() => {
+                                                                            $('.pygif').attr('src', './assets/images/ep1/18.jpg');
+                                                                            $('.q1').show();
+                                                                        }, 2500);
+                                                                    }, 2500);
+                                                                }, 2500);
+                                                            }, 2500);
+                                                        }, 2500);
+                                                    }, 2500);
+                                                }, 2500);
+                                            }, 2500);
+                                        }, 2500);
+                                    }, 2500);
+                                }, 2500);
+                            }, 2500);
+                        }, 2500);
+                    }, 2500);
+                }, 2500);
+            }, 2500);
+        }, 2500);
+    });
+</script>
