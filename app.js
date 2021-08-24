@@ -83,6 +83,11 @@ app.get('#/collect-ep2', function () {
     this.$element().load('views/20-collect_ep2.html');
 });
 
+app.get('#/creadit', function () {
+    this.$element().load('views/21-creadit.html');
+});
+
+
 app.notFound = function () {
     this.$element().load('views/1-home.html');
 }
