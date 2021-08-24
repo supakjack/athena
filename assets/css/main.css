@@ -4,6 +4,10 @@
     font-family: 'Itim', cursive;
 }
 
+body{
+    background-color: #F9FCFC;
+}
+
 #footer {
     background: url('./../images/footer.png') no-repeat;
     height: 10%;
