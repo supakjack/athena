@@ -19,6 +19,7 @@
                     })
                 }" style="min-width: 5rem; max-width: 160px; margin-top: 1rem;" type="button"
                 class="fs-6 btn btn-outline-secondary">รับ QR CODE กดที่นี้</button>
+            <p class="text-center mt-2">จำนวนผู้เข้าชม <span id="visits"></span> คน</p>
         </div>
     </div>
 </div>
@@ -30,5 +31,7 @@
 </style>
 
 <script>
-
+    $.getJSON("https://api.countapi.xyz/hit/supakjack.github.io.athena", function (response) {
+        $("#visits").text(response.value);
+    });
 </script>
