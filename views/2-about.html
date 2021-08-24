@@ -3,7 +3,7 @@
         class="position-absolute top-50 start-50 translate-middle d-flex flex-column justify-content-around align-items-center d-flex flex-wrap">
         <img src="./assets/images/gifs/intro/2.gif" class="rounded" alt="Athena" style="max-width: 420px;">
 
-        <div class="row d-flex justify-content-evenly " style="width: 400px;">
+        <div class="row d-flex justify-content-evenly " style="width: 375px;">
             <button onclick="app.setLocation('#/start-set-1')"
                 style="min-width: 5rem; max-width: 160px; margin-top: 1rem;" type="button"
                 class="fs-6 btn btn-outline-success">ถ้าพร้อมแล้ว กดที่นี้</button>
@@ -11,8 +11,9 @@
                     console.log('qr code');
                     Swal.fire({
                         imageUrl: './assets/images/qrcode.png',
-                        imageWidth: 420,
-                        imageHeight: 420,
+                        width: 290,
+                        imageWidth: 290,
+                        imageHeight: 290,
                         showCloseButton: true,
                         showConfirmButton: false,
                     })
@@ -23,7 +24,9 @@
 </div>
 
 <style>
-
+    /* .swal-wide {
+        width: 850px !important;
+    } */
 </style>
 
 <script>
